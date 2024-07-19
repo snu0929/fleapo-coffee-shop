@@ -12,47 +12,71 @@
 <body>
     <div id="main">
 
-        <!-- --------------------------navbar section-------------------------------------- -->
-        <nav class="navbar">
-            <div class="left-nav">
-                <button class="menu-toggle">☰</button>
-                <div class="logo">
-                    <img src="./assets/navbar/logo.svg" alt="logo" />
-                </div>
-                <div class="icons">
-                    <img src="./assets/navbar/mdi-light_account.svg" />
-                    <img src="./assets/navbar/ph_shopping-cart-light.svg" />
+<!-- --------------------------navbar section-------------------------------------- -->
+<!-- --------------------------navbar section-------------------------------------- -->
+<!-- --------------------------navbar section-------------------------------------- -->
+<nav class="navbar">
+    <div class="left-nav">
+        <div class="logo">
+            <img src="./assets/navbar/logo.svg" alt="logo" />
+        </div>
+        <div class="icons">
+            <img src="./assets/navbar/mdi-light_account.svg" alt="User Account" />
+            <img src="./assets/navbar/ph_shopping-cart-light.svg" alt="Shopping Cart" />
+            <button class="menu-toggle">☰</button>
+        </div>
+    </div>
 
-                </div>
-            </div>
+    <div class="right-nav">
+        <button class="menu-close">✖</button>
+        <p><a href="#home">Home</a></p>
+        <p><a href="#menu">Menu</a></p>
+        <p><a href="#services">Services</a></p>
+        <p><a href="#product">Product</a></p>
+        <p><a href="#blog">Blog</a></p>
+        <p><a href="#contact">Contact</a></p>
+    </div>
+</nav>
 
-            <div class="right-nav">
-                <p>Home</p>
-                <p>Menu</p>
-                <p>Services</p>
-                <p>Product</p>
-                <p>Blog</p>
-                <p>Contact</p>
-            </div>
-        </nav>
+
+
 
 
         <!-- --------------------------hero section-------------------------------------- -->
         <section class="hero">
-            <img src="./assets/herosection/coffee-landing-transformed copy 1.png" alt="Coffee Cup" />
-            <div class="left-hero">
+            <div class="background-container">
+                <div class="background-layer beans-layer">
+                    <img src="./assets/herosection/beans.svg" alt="Beans" />
+                </div>
+                <div class="background-layer coffee-layer">
+                    <img src="./assets/herosection/coffee-landing-transformed copy 1.png" alt="Coffee" />
+                </div>
+            </div>
+            <div class="cup">
+                <div class="cup-img">
+                    <img src="./assets/herosection/Cup1.svg" alt="Cup" />
+                </div>
+                <div class="cup-btn">
+                    <h3>But First Coffee</h3>
+                    <button>Hurry Up</button>
+                </div>
+            </div>
+            <div class="left-hero bg-left-hero">
                 <h1>Elga Coffee</h1>
                 <div>
                     <p>Today's good mood is sponsored by coffee</p>
                     <p>Search for your coffee now</p>
                 </div>
                 <div class="hero-btn">
-                    <button>Shop Now</button>
-                    <button>Catalog Now</button>
+                    <button><span>Shop Now</span></button>
+                    <button><span>Catalog Now</span></button>
                 </div>
+                
             </div>
             <div class="right-hero"></div>
         </section>
+        
+       
 
         <!-- --------------------------Story section-------------------------------------- -->
 
@@ -68,6 +92,7 @@
                         variety of ethically sourced products to tantalize any customer palate. For those who are
                         looking for unique brewing equipment, Eliza also carries a full range of quality espresso
                         makers, grinders, and brewers.....</p>
+                        <p>More..</p>
                 </div>
             </div>
         </section>
@@ -78,48 +103,53 @@
         <section class="services-section">
             <h1>Services</h1>
             <div class="services">
-                <div>
-                    <img src="./assets//services/icon 1.svg" />
+                <div class="service-card">
+                    <img src="./assets/services/icon 1.svg" alt="Equipment" />
                     <p>Equipment</p>
                 </div>
-                <div>
-                    <img src="./assets//services/Frame.svg" />
+                <div class="service-card">
+                    <img src="./assets/services/Frame.svg" alt="Type of Coffee" />
                     <p>Type of Coffee</p>
                 </div>
-                <div>
-                    <img src="./assets//services/icon 3.svg" />
-                    <p>Taske A Way</p>
+                <div class="service-card">
+                    <img src="./assets/services/icon 3.svg" alt="Take Away" />
+                    <p>Take Away</p>
                 </div>
-                <div>
-                    <img src="./assets//services/icon 4.svg" />
+                <div class="service-card">
+                    <img src="./assets/services/icon 4.svg" alt="Beans Variant" />
                     <p>Beans Variant</p>
                 </div>
-                <div>
-                    <img src="./assets//services/Group 6.svg" />
-                    <p>Pasty</p>
+                <div class="service-card">
+                    <img src="./assets/services/Group 6.svg" alt="Pastry" />
+                    <p>Pastry</p>
                 </div>
-
             </div>
         </section>
+        <div id="serviceModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+            </div>
+        </div>
 
 
         <!-- --------------------------offer section-------------------------------------- -->
 
         <section class="offer">
             <h1>Offer</h1>
-            <div>
-                <div>
-                    <h1>Up To <span>50%</span>Off</h1>
-                    <p>All Our cafe We tak Pride In Porviding Our Customer With The Best
-                        Coffee Around.Our Carefully Selected Coffees Come From Some Of The
-                        Most Renewed Coffee Growing Region In The worrld,Ensuring That...
-                    </p>
+            <div class="offer-content">
+                <div class="offer-text">
+                    <h1>Up To <span>50%</span> Off</h1>
+                    <p>All Our cafe We take Pride In Providing Our Customers With The Best Coffee Around. Our Carefully Selected Coffees Come From Some Of The Most Renowned Coffee Growing Regions In The World, Ensuring That...</p>
+                    <button id="shop-now-btn">Shop Now</button>
                 </div>
-                <div>
-                    <img src="./assets/Proefpakket_page-0003 2 (no bg).svg" />
+                <div class="offer-image">
+                    <img src="./assets/Proefpakket_page-0003 2 (no bg).svg" alt="Offer Image" />
                 </div>
             </div>
         </section>
+        
 
         <!-- -------------------------------------------Reverse the Table section------------------------------------- -->
 
@@ -132,42 +162,50 @@
                 <div class="input-group">
                     <div class="input-wrapper">
                         <img src="./assets/reverse/Vector.svg" class="icon" />
-                        <input type="text" placeholder="Date" />
+                        <input type="date" placeholder="Date" id="date" />
                     </div>
                 </div>
                 <div class="input-group">
                     <div class="input-wrapper">
                         <img src="./assets/reverse/Vector (1).svg" class="icon" />
-                        <input type="text" placeholder="Time" />
+                        <input type="time" placeholder="Time" id="time"/>
                     </div>
                     <div class="input-wrapper">
                         <img src="./assets/reverse/Vector (2).svg" class="icon" />
-                        <input type="text" placeholder="Guest" />
+                        <input type="number" placeholder="Guest" id="guest" />
                     </div>
                 </div>
                 <div class="input-group">
                     <div class="input-wrapper">
                         <img src="./assets/reverse/Vector (3).svg" class="icon" />
-                        <input type="text" placeholder="Your name" />
+                        <input type="text" placeholder="Your name"  id="name"/>
                     </div>
                 </div>
                 <div class="input-group">
                     <div class="input-wrapper">
                         <img src="./assets/reverse/Vector (4).svg" class="icon" />
-                        <input type="text" placeholder="Your Phone" />
+                        <input type="phone" placeholder="Your Phone" id="phone" />
                     </div>
                 </div>
                 <div class="input-group">
                     <div class="input-wrapper">
                         <img src="./assets/reverse/Vector (5).svg" class="icon" />
-                        <input type="text" placeholder="Your Email" />
+                        <input type="text" placeholder="Your Email" id="email" />
+                        <button id="reserve-btn">Reserve</button>
                     </div>
-                    <!-- <button>Reserve</button> -->
-                    <img src="./assets//reverse/Frame 3.svg" />
+                    <!-- <button id="reserve-btn">Reserve</button> -->
+                    
                 </div>
             </div>
         </section>
-
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <h2>Reservation Details</h2>
+                <p id="popup-details"></p>
+                <button id="confirm-btn">Confirm</button>
+            </div>
+        </div>
 
         <!-- -------------------------------------section Recommennde-------------------------------- -->
 
@@ -175,6 +213,7 @@
             <h1>Recommended</h1>
             <div class="recommended-items">
                 <div class="recommended-item">
+                    
                     <div class="image-container">
                         <img src="./assets/Recommended/Rectangle (no bg).svg" alt="Arabia Dark Roast" />
                     </div>
@@ -323,127 +362,166 @@
             </div>
         </section>
 
-        <section class="subscribe">
-            <h2>Subscribe To Our Newsletter, Discount, And Promotions</h2>
-            <div class="subscribe-container">
-                <input type="email" placeholder="Your email address" />
-                <button>Subscribe</button>
-            </div>
-        </section>
+      
         
-        <section class="footer">
-            <div class="bg-image">
-            <div class="social-media">
-                <p>Social media:</p>
-                <img src="./assets/footer/linkdin.svg" alt="LinkedIn"/>
-                <img src="./assets/footer/Pinterest.svg" alt="Pinterest"/>
-                <img src="./assets/footer/Instagram.svg" alt="Instagram"/>
+<!-- =========================================Customer Review==================================== -->
+
+
+<section class="customer-review bg-review-image">
+    <h1>Customer Review</h1>
+    <div class="review-container">
+        <div class="arrow left-arrow"><img  src="./assets//Customer-review/left-arrow.svg"/></div>
+        <div class="reviews">
+            <div class="review">
+                <img src="./assets/Customer-review/bewakoof-com-official-208957 1.svg" />
+                <p class="name">Review 1</p>
+                <p class="role">Role 1</p>
+                <div class="rating">
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (4).svg" />
+                </div>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam perspiciatis eaque nisi sapiente quam consequuntur reiciendis provident error totam.
+            </p>
             </div>
-        
-            <div class="footer-content">
-                <div class="logo">
-                    <img src="./assets/footer/Graphic Elements.svg" alt="Logo"/>
+            <div class="review">
+                <img src="./assets/Customer-review/kelly-searle-209751-scaled 1.svg" />
+                <p class="name">Review 2</p>
+                <p class="role">Role 2</p>
+                <div class="rating">
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (4).svg" />
                 </div>
-                <div class="footer-section">
-                    <h2>About</h2>
-                    <p>Our Story</p>
-                    <p>FAQ</p>
-                    <p>Careers</p>
-                </div>
-                <div class="footer-section">
-                    <h2>Customer Resource</h2>
-                    <p>Our Story</p>
-                    <p>FAQ</p>
-                    <p>Careers</p>
-                </div>
-                <div class="footer-section">
-                    <h2>Services</h2>
-                    <p>Payment Option</p>
-                    <p>Refund & Exchange</p>
-                    <p>Limitation Of Liability</p>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <img src="./assets/footer/location.svg" alt="Location"/>
-                        <p>12 John Avenue 35 - New York</p>
-                    </div>
-                    <div class="contact-item">
-                        <img src="./assets/footer/email.svg" alt="Email"/>
-                        <p>1ElizaCofee@cofee.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <img src="./assets/footer/phone.svg" alt="Phone"/>
-                        <p>+1-222--34-Eliza</p>
-                    </div>
-                </div>
+                <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque temporibus consectetur, sequi nobis consequatur cum quidem architecto expedita, laboriosam ducimus reiciendis.
+                </p>
             </div>
-            <div class="footer-bottom">
-                <p>Created by Eliza29</p>
-                <p>Copyright 2023 Eliza Coffee. All Rights Reserved</p>
+            <div class="review full">
+                <img src="./assets/Customer-review/bewakoof-com-official-208957 1.svg" />
+                <p class="name">Review 3</p>
+                <p class="role">Role 3</p>
+                <div class="rating">
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (4).svg" />
+                </div>
+                <p class="review-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex adipisci nostrum facilis reiciendis. Voluptatibus repudiandae im.
+           </p>
+            </div>
+            <div class="review">
+                <img src="./assets/Customer-review/pexels-photo-26939-1-1024x1024 1.svg" />
+                <p class="name">Review 4</p>
+                <p class="role">Role 4</p>
+                <div class="rating">
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (4).svg" />
+                </div>
+                <p class="review-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, ratione ex iure excepturi eius dicta, assumenda .
+            </div>
+            <div class="review">
+                <img src="./assets/Customer-review/pexels-photo-26939-1-1024x1024 1.svg" />
+                <p class="name">Review 5</p>
+                <p class="role">Role 5</p>
+                <div class="rating">
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (3).svg" />
+                    <img src="./assets/Customer-review/Vector (4).svg" />
+                </div>
+                <p class="review-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptatibus sunt ratione! Tenetur consequuntur distinctio quod .
+               .</p>
             </div>
         </div>
-        </section>
+        <div class="arrow right-arrow"><img  src="./assets//Customer-review/right-arrow.svg"/></div>
+        
+    </div>
+</section>
+
+
+<section class="subscribe">
+    <h2>Subscribe To Our Newsletter, Discounts, And Promotions</h2>
+    <div class="subscribe-container">
+        <div class="input-container">
+            <img src="./assets/notification.svg" alt="Notification Icon" class="notification-icon"/>
+            <input type="email" placeholder="Your email address" />
+        </div>
+        <button>Subscribe</button>
+    </div>
+</section>
+
+
+        
+<!-- =========================================foooter ==================================== -->
+<section class="footer">
+    <div class="bg-image">
+        <div class="social-media">
+            <p>Social media:</p>
+            <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+                <img src="./assets/footer/linkdin.svg" alt="LinkedIn"/>
+            </a>
+            <a href="https://www.pinterest.com" target="_blank" title="Pinterest">
+                <img src="./assets/footer/Pinterest.svg" alt="Pinterest"/>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                <img src="./assets/footer/Instagram.svg" alt="Instagram"/>
+            </a>
+        </div>
+
+        <div class="footer-content">
+            <div class="logo">
+                <img src="./assets/footer/Graphic Elements.svg" alt="Logo"/>
+            </div>
+            <div class="footer-section">
+                <h2>About</h2>
+                <p><a href="#our-story">Our Story</a></p>
+                <p><a href="#faq">FAQ</a></p>
+                <p><a href="#careers">Careers</a></p>
+            </div>
+            <div class="footer-section">
+                <h2>Customer Resource</h2>
+                <p><a href="#our-story">Our Story</a></p>
+                <p><a href="#faq">FAQ</a></p>
+                <p><a href="#careers">Careers</a></p>
+            </div>
+            <div class="footer-section">
+                <h2>Services</h2>
+                <p><a href="#payment-options">Payment Options</a></p>
+                <p><a href="#refund-exchange">Refund & Exchange</a></p>
+                <p><a href="#liability">Limitation Of Liability</a></p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="./assets/footer/location.svg" alt="Location"/>
+                    <p>12 John Avenue 35 - New York</p>
+                </div>
+                <div class="contact-item">
+                    <img src="./assets/footer/email.svg" alt="Email"/>
+                    <p>1ElizaCofee@cofee.com</p>
+                </div>
+                <div class="contact-item">
+                    <img src="./assets/footer/phone.svg" alt="Phone"/>
+                    <p>+1-222--34-Eliza</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Created by Eliza29</p>
+            <p>Copyright 2023 Eliza Coffee. All Rights Reserved</p>
+        </div>
+    </div>
+    <button id="back-to-top">Back to Top</button>
+</section>
+
         
   
     </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            document.querySelector(".menu-toggle").addEventListener("click", function () {
-                document.querySelector(".navbar").classList.toggle("active");
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const carousel = document.querySelector('.carousel');
-            const leftArrow = document.querySelector('.left-arrow');
-            const rightArrow = document.querySelector('.right-arrow');
-            let offset = 0;
-            const itemWidth = document.querySelector('.recommended-item').offsetWidth;
-
-            leftArrow.addEventListener('click', () => {
-                if (offset > 0) {
-                    offset -= itemWidth;
-                    carousel.style.transform = `translateX(-${offset}px)`;
-                }
-            });
-
-            rightArrow.addEventListener('click', () => {
-                if (offset < carousel.scrollWidth - carousel.clientWidth) {
-                    offset += itemWidth;
-                    carousel.style.transform = `translateX(-${offset}px)`;
-                }
-            });
-        });
-
-
-        document.addEventListener("DOMContentLoaded", function() {
-    const blogList = document.querySelector(".blog-list");
-    const items = document.querySelectorAll(".blog-item");
-    const totalItems = items.length;
-    const visibleItems = 2; // Number of items to show at once
-    let currentPosition = 0;
-
-    document.getElementById("arrow-right").addEventListener("click", function() {
-        if (currentPosition < totalItems - visibleItems) {
-            currentPosition++;
-            updateCarousel();
-        }
-    });
-
-    document.getElementById("arrow-left").addEventListener("click", function() {
-        if (currentPosition > 0) {
-            currentPosition--;
-            updateCarousel();
-        }
-    });
-
-    function updateCarousel() {
-        const itemWidth = items[0].clientWidth;
-        const newTransform = -currentPosition * (itemWidth + 20); // Adjust for margin
-        blogList.style.transform = `translateX(${newTransform}px)`;
-    }
-});
+    <script src="index.js">
 
 
     </script>
