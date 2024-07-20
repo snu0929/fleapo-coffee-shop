@@ -4,6 +4,7 @@
 Fleapo Coffee Shop is a beautifully designed and responsive website for a coffee shop. This project showcases various sections including a hero section, popular menu, recommended items, blog posts, a subscription section, and a footer with social media links and contact information. The website is styled to provide an engaging user experience with a consistent color scheme and layout.
 
 ## Features
+- **Navbar Section**:A Navbar where all important pages are available at home and icons available.
 - **Hero Section**: A visually appealing hero section with a background image and a welcome message.
 - **Popular Menu**: Displays a selection of popular menu items with images and prices.
 - **Recommended Items**: Showcases recommended coffee items with hover effects.
