@@ -14,6 +14,7 @@ Fleapo Coffee Shop is a beautifully designed and responsive website for a coffee
 ## Technologies Used
 - HTML
 - CSS
+- JavaScript
 - Git/GitHub for version control
 
 ## Setup and Installation
